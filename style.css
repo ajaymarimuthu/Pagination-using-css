@@ -8,7 +8,18 @@ body{
     font-family: 'Inter',sans-serif;
     line-height: 1;   
     color: darkgrey; 
+    display: flex;
+    justify-content: center;
  
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 200px;
+ 
+
 }
 
 .btn{
@@ -21,6 +32,13 @@ body{
     cursor: pointer;
 
 }
+.btn:hover{
+    background-color: #087f5b;
+}
+
+.btn:hover .btn-icon{
+    stroke: white;
+}
 
 .btn-icon{
     height: 24px;
@@ -29,3 +47,40 @@ body{
     
 }
 
+.page-link:link,
+.page-link:visited
+{
+
+    font-size: 18px;
+    color: #343a40;
+    text-decoration: none;
+    
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ 
+
+}
+ 
+
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current
+
+{
+    background-color: #087f5b;
+    color: white;
+}
+ 
+
+.dots{
+
+    color: #868e96;
+
+}
